@@ -38,6 +38,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Connected");
+});
+
 server.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });
